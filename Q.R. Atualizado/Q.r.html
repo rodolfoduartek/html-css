@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q.R. HTML Interativo</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 1 ATALHO -->
+<section>
+<h4 class="titulo-secao">ATALHO ENVELOPAR (WRAP)</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec0')">Mostrar código</button>
+<button onclick="copyCode('code0')">Copiar</button>
+</div>
+
+<div id="sec0" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<p>Selecione um texto e pressione:</p>
+<p><strong>Ctrl + Shift + P → Wrap with Abbreviation</strong></p>
+<p>Digite: <strong>span</strong> e pressione Enter</p>
+</div>
+
+<div class="codigo">
+<pre id="code0"><code>
+<span class="tag">&lt;span&gt;</span><span class="text">texto</span><span class="tag">&lt;/span&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+
+<section>
+<h4 class="titulo-secao">SELETORES PERSONALIZADOS</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec26')">Mostrar código</button>
+<button onclick="copyCode('code26')">Copiar</button>
+</div>
+
+<div id="sec26" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<p><strong>#</strong> = id</p>
+<p><strong>.</strong> = class</p>
+<p><strong>:</strong> = pseudo-class</p>
+<p><strong>::</strong> = pseudo-element</p>
+<p><strong>&gt;</strong> = children</p>
+</div>
+
+<div class="codigo">
+<pre id="code26"><code>
+<span class="tag">/*</span> <span class="text">SELETORES PERSONALIZADOS</span>
+
+<span class="text">#</span> <span class="text">= id</span>
+<span class="text">.</span> <span class="text">= class</span>
+<span class="text">:</span> <span class="text">= pseudo-class</span>
+<span class="text">::</span> <span class="text">= pseudo-element</span>
+<span class="text">&gt;</span> <span class="text">= children</span>
+
+<span class="tag">*/</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+
+<!-- 2 TITULOS -->
+<section>
+<h4 class="titulo-secao">TÍTULOS</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec1')">Mostrar código</button>
+<button onclick="copyCode('code1')">Copiar</button>
+</div>
+
+<div id="sec1" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<h1>Título nível 1</h1>
+<h2>Título nível 2</h2>
+<h3>Título nível 3</h3>
+<h4>Título nível 4</h4>
+<h5>Título nível 5</h5>
+<h6>Título nível 6</h6>
+</div>
+
+<div class="codigo">
+<pre id="code1"><code>
+<span class="tag">&lt;h1&gt;</span><span class="text">Título nível 1</span><span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;h2&gt;</span><span class="text">Título nível 2</span><span class="tag">&lt;/h2&gt;</span>
+<span class="tag">&lt;h3&gt;</span><span class="text">Título nível 3</span><span class="tag">&lt;/h3&gt;</span>
+<span class="tag">&lt;h4&gt;</span><span class="text">Título nível 4</span><span class="tag">&lt;/h4&gt;</span>
+<span class="tag">&lt;h5&gt;</span><span class="text">Título nível 5</span><span class="tag">&lt;/h5&gt;</span>
+<span class="tag">&lt;h6&gt;</span><span class="text">Título nível 6</span><span class="tag">&lt;/h6&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- 3 IMAGEM -->
+<section>
+<h4 class="titulo-secao">IMAGEM</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec2')">Mostrar código</button>
+<button onclick="copyCode('code2')">Copiar</button>
+</div>
+
+<div id="sec2" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<img src="foto-perfil-guanabara.png" alt="foto do perfil">
+</div>
+
+<div class="codigo">
+<pre id="code2"><code>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="value">"foto-perfil-guanabara.png"</span> <span class="attr">alt=</span><span class="value">"foto do perfil"</span><span class="tag">&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+<section>
+<h4 class="titulo-secao">PARÁGRAFO E QUEBRA</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec3')">Mostrar código</button>
+<button onclick="copyCode('code3')">Copiar</button>
+</div>
+
+<div id="sec3" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<p>Texto exemplo<br>quebra de linha</p>
+</div>
+
+<div class="codigo">
+<pre id="code3"><code>
+<span class="tag">&lt;p&gt;</span>
+<span class="text">Texto exemplo</span><span class="tag">&lt;br&gt;</span>
+<span class="text">quebra de linha</span>
+<span class="tag">&lt;/p&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section>
+<h4 class="titulo-secao">FORMATAÇÃO DE TEXTO</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec4')">Mostrar código</button>
+<button onclick="copyCode('code4')">Copiar</button>
+</div>
+
+<div id="sec4" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<strong>Negrito</strong><br>
+<em>Itálico</em><br>
+<mark>Marcado</mark><br>
+<small>Pequeno</small><br>
+<del>Riscado</del><br>
+<ins>Inserido</ins>
+</div>
+
+<div class="codigo">
+<pre id="code4"><code>
+<span class="tag">&lt;strong&gt;</span><span class="text">Negrito</span><span class="tag">&lt;/strong&gt;</span>
+<span class="tag">&lt;em&gt;</span><span class="text">Itálico</span><span class="tag">&lt;/em&gt;</span>
+<span class="tag">&lt;mark&gt;</span><span class="text">Marcado</span><span class="tag">&lt;/mark&gt;</span>
+<span class="tag">&lt;small&gt;</span><span class="text">Pequeno</span><span class="tag">&lt;/small&gt;</span>
+<span class="tag">&lt;del&gt;</span><span class="text">Riscado</span><span class="tag">&lt;/del&gt;</span>
+<span class="tag">&lt;ins&gt;</span><span class="text">Inserido</span><span class="tag">&lt;/ins&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
+<h4 class="titulo-secao">LISTA NÃO ORDENADA</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec5')">Mostrar código</button>
+<button onclick="copyCode('code5')">Copiar</button>
+</div>
+
+<div id="sec5" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+</div>
+
+<div class="codigo">
+<pre id="code5"><code>
+<span class="tag">&lt;ul&gt;</span>
+<span class="tag">&lt;li&gt;</span><span class="text">Item 1</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;li&gt;</span><span class="text">Item 2</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;li&gt;</span><span class="text">Item 3</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section>
+<h4 class="titulo-secao">TIPOS DE MARCADOR</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec6')">Mostrar código</button>
+<button onclick="copyCode('code6')">Copiar</button>
+</div>
+
+<div id="sec6" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<ul type="disc"><li>Disc</li></ul>
+<ul type="circle"><li>Circle</li></ul>
+<ul type="square"><li>Square</li></ul>
+</div>
+
+<div class="codigo">
+<pre id="code6"><code>
+<span class="tag">&lt;ul</span> <span class="attr">type=</span><span class="value">"disc"</span><span class="tag">&gt;</span>...<span class="tag">&lt;/ul&gt;</span>
+<span class="tag">&lt;ul</span> <span class="attr">type=</span><span class="value">"circle"</span><span class="tag">&gt;</span>...<span class="tag">&lt;/ul&gt;</span>
+<span class="tag">&lt;ul</span> <span class="attr">type=</span><span class="value">"square"</span><span class="tag">&gt;</span>...<span class="tag">&lt;/ul&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section>
+<h4 class="titulo-secao">TIPOS DE NUMERAÇÃO</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec8')">Mostrar código</button>
+<button onclick="copyCode('code8')">Copiar</button>
+</div>
+
+<div id="sec8" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<ol type="1">
+    <li>1</li>
+</ol>
+
+<ol type="A">
+    <li>A</li>
+</ol>
+
+<ol type="a">
+    <li>a</li>
+</ol>
+
+<ol type="I">
+    <li>I</li>
+</ol>
+
+<ol type="i">
+    <li>i</li>
+</ol>
+</div>
+
+<div class="codigo">
+<pre id="code8"><code>
+<span class="tag">&lt;ol</span> <span class="attr">type=</span><span class="value">"1"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;li&gt;</span><span class="text">1</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span>
+
+<span class="tag">&lt;ol</span> <span class="attr">type=</span><span class="value">"A"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;li&gt;</span><span class="text">A</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span>
+
+<span class="tag">&lt;ol</span> <span class="attr">type=</span><span class="value">"a"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;li&gt;</span><span class="text">a</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span>
+
+<span class="tag">&lt;ol</span> <span class="attr">type=</span><span class="value">"I"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;li&gt;</span><span class="text">I</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span>
+
+<span class="tag">&lt;ol</span> <span class="attr">type=</span><span class="value">"i"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;li&gt;</span><span class="text">i</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
+<h4 class="titulo-secao">LISTA DE DEFINIÇÃO</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec9')">Mostrar código</button>
+<button onclick="copyCode('code9')">Copiar</button>
+</div>
+
+<div id="sec9" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação</dd>
+
+    <dt>CSS</dt>
+    <dd>Estilização</dd>
+</dl>
+</div>
+
+<div class="codigo">
+<pre id="code9"><code>
+<span class="tag">&lt;dl&gt;</span>
+    <span class="tag">&lt;dt&gt;</span><span class="text">HTML</span><span class="tag">&lt;/dt&gt;</span>
+    <span class="tag">&lt;dd&gt;</span><span class="text">Linguagem de marcação</span><span class="tag">&lt;/dd&gt;</span>
+
+    <span class="tag">&lt;dt&gt;</span><span class="text">CSS</span><span class="tag">&lt;/dt&gt;</span>
+    <span class="tag">&lt;dd&gt;</span><span class="text">Estilização</span><span class="tag">&lt;/dd&gt;</span>
+<span class="tag">&lt;/dl&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
+<h4 class="titulo-secao">LISTA ORDENADA</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec7')">Mostrar código</button>
+<button onclick="copyCode('code7')">Copiar</button>
+</div>
+
+<div id="sec7" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+</div>
+
+<div class="codigo">
+<pre id="code7"><code>
+<span class="tag">&lt;ol&gt;</span>
+    <span class="tag">&lt;li&gt;</span><span class="text">Item 1</span><span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span><span class="text">Item 2</span><span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span><span class="text">Item 3</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section>
+<h4 class="titulo-secao">LINK EXTERNO</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec10')">Mostrar código</button>
+<button onclick="copyCode('code10')">Copiar</button>
+</div>
+
+<div id="sec10" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<a href="https://google.com" target="_blank">Acessar site</a>
+</div>
+
+<div class="codigo">
+<pre id="code10"><code>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="value">"https://google.com"</span> <span class="attr">target=</span><span class="value">"_blank"</span><span class="tag">&gt;</span>
+<span class="text">Acessar site</span>
+<span class="tag">&lt;/a&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section>
+<h4 class="titulo-secao">LINK INTERNO</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec11')">Mostrar código</button>
+<button onclick="copyCode('code11')">Copiar</button>
+</div>
+
+<div id="sec11" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<a href="pag002.html">Ir para página 2</a>
+</div>
+
+<div class="codigo">
+<pre id="code11"><code>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="value">"pag002.html"</span><span class="tag">&gt;</span>
+<span class="text">Ir para página 2</span>
+<span class="tag">&lt;/a&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section>
+<h4 class="titulo-secao">DOWNLOAD</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec12')">Mostrar código</button>
+<button onclick="copyCode('code12')">Copiar</button>
+</div>
+
+<div id="sec12" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<a href="arquivo.pdf" download="arquivo.pdf">Baixar PDF</a>
+</div>
+
+<div class="codigo">
+<pre id="code12"><code>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="value">"arquivo.pdf"</span> <span class="attr">download=</span><span class="value">"arquivo.pdf"</span><span class="tag">&gt;</span>
+<span class="text">Baixar PDF</span>
+<span class="tag">&lt;/a&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section>
+<h4 class="titulo-secao">ABREVIAÇÃO</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec13')">Mostrar código</button>
+<button onclick="copyCode('code13')">Copiar</button>
+</div>
+
+<div id="sec13" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<abbr title="HyperText Markup Language">HTML</abbr>
+</div>
+
+<div class="codigo">
+<pre id="code13"><code>
+<span class="tag">&lt;abbr</span> <span class="attr">title=</span><span class="value">"HyperText Markup Language"</span><span class="tag">&gt;</span>
+<span class="text">HTML</span>
+<span class="tag">&lt;/abbr&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section>
+<h4 class="titulo-secao">CÓDIGO</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec14')">Mostrar código</button>
+<button onclick="copyCode('code14')">Copiar</button>
+</div>
+
+<div id="sec14" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<code>console.log("Olá mundo")</code>
+</div>
+
+<div class="codigo">
+<pre id="code14"><code>
+<span class="tag">&lt;code&gt;</span>
+<span class="text">console.log("Olá mundo")</span>
+<span class="tag">&lt;/code&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section>
+<h4 class="titulo-secao">BLOCO DE CÓDIGO</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec15')">Mostrar código</button>
+<button onclick="copyCode('code15')">Copiar</button>
+</div>
+
+<div id="sec15" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<pre><code>
+function soma() {
+    return 2 + 2;
+}
+</code></pre>
+</div>
+
+<div class="codigo">
+<pre id="code15"><code>
+<span class="tag">&lt;pre&gt;</span>
+<span class="tag">&lt;code&gt;</span>
+<span class="text">function soma() {
+    return 2 + 2;
+}</span>
+<span class="tag">&lt;/code&gt;</span>
+<span class="tag">&lt;/pre&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section>
+<h4 class="titulo-secao">CITAÇÃO</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec16')">Mostrar código</button>
+<button onclick="copyCode('code16')">Copiar</button>
+</div>
+
+<div id="sec16" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<q>Essa é uma citação</q>
+</div>
+
+<div class="codigo">
+<pre id="code16"><code>
+<span class="tag">&lt;q&gt;</span>
+<span class="text">Essa é uma citação</span>
+<span class="tag">&lt;/q&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section>
+<h4 class="titulo-secao">CITAÇÃO EM BLOCO</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec17')">Mostrar código</button>
+<button onclick="copyCode('code17')">Copiar</button>
+</div>
+
+<div id="sec17" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<blockquote>Essa é uma citação maior em bloco</blockquote>
+</div>
+
+<div class="codigo">
+<pre id="code17"><code>
+<span class="tag">&lt;blockquote&gt;</span>
+<span class="text">Essa é uma citação maior em bloco</span>
+<span class="tag">&lt;/blockquote&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section>
+<h4 class="titulo-secao">TEXTO INVERTIDO</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec18')">Mostrar código</button>
+<button onclick="copyCode('code18')">Copiar</button>
+</div>
+
+<div id="sec18" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<bdo dir="rtl">Texto invertido</bdo>
+</div>
+
+<div class="codigo">
+<pre id="code18"><code>
+<span class="tag">&lt;bdo</span> <span class="attr">dir=</span><span class="value">"rtl"</span><span class="tag">&gt;</span>
+<span class="text">Texto invertido</span>
+<span class="tag">&lt;/bdo&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
+<h4 class="titulo-secao">LINHA HORIZONTAL</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec19')">Mostrar código</button>
+<button onclick="copyCode('code19')">Copiar</button>
+</div>
+
+<div id="sec19" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<hr>
+</div>
+
+<div class="codigo">
+<pre id="code19"><code>
+<span class="tag">&lt;hr&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section>
+<h4 class="titulo-secao">COMENTÁRIO</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec20')">Mostrar código</button>
+<button onclick="copyCode('code20')">Copiar</button>
+</div>
+
+<div id="sec20" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+(Não aparece na tela)
+</div>
+
+<div class="codigo">
+<pre id="code20"><code>
+<span class="tag">&lt;!-- Isso é um comentário --&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section>
+<h4 class="titulo-secao">IMAGEM DINÂMICA</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec23')">Mostrar código</button>
+<button onclick="copyCode('code23')">Copiar</button>
+</div>
+
+<div id="sec23" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<picture>
+    <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="imagem flexível">
+</picture>
+</div>
+
+<div class="codigo">
+<pre id="code23"><code>
+<span class="tag">&lt;picture&gt;</span>
+    <span class="tag">&lt;source</span> <span class="attr">media=</span><span class="value">"(max-width:750px)"</span> <span class="attr">srcset=</span><span class="value">"imagens/foto-p.png"</span> <span class="attr">type=</span><span class="value">"image/png"</span><span class="tag">&gt;</span>
+
+    <span class="tag">&lt;source</span> <span class="attr">media=</span><span class="value">"(max-width:1050px)"</span> <span class="attr">srcset=</span><span class="value">"imagens/foto-m.png"</span> <span class="attr">type=</span><span class="value">"image/png"</span><span class="tag">&gt;</span>
+
+    <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="value">"imagens/foto-g.png"</span> <span class="attr">alt=</span><span class="value">"imagem flexível"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/picture&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section>
+<h4 class="titulo-secao">ÁUDIO</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec24')">Mostrar código</button>
+<button onclick="copyCode('code24')">Copiar</button>
+</div>
+
+<div id="sec24" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+<p>Vamos aprender a reproduzir áudio em HTML5</p>
+
+<audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+
+<p>Versão completa:</p>
+
+<audio preload="auto" autoplay controls>
+    <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+    <source src="midia/happy-mistake.mp3" type="audio/ogg">
+    <source src="midia/happy-mistake.mp3" type="audio/wav">
+</audio>
+</div>
+
+<div class="codigo">
+<pre id="code24"><code>
+<span class="tag">&lt;audio</span> <span class="attr">src=</span><span class="value">"midia/happy-mistake.mp3"</span> <span class="attr">controls</span> <span class="attr">autoplay</span><span class="tag">&gt;&lt;/audio&gt;</span>
+
+<span class="tag">&lt;audio</span> <span class="attr">preload=</span><span class="value">"auto"</span> <span class="attr">autoplay</span> <span class="attr">controls</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;source</span> <span class="attr">src=</span><span class="value">"midia/happy-mistake.mp3"</span> <span class="attr">type=</span><span class="value">"audio/mpeg"</span><span class="tag">&gt;</span>
+
+    <span class="tag">&lt;source</span> <span class="attr">src=</span><span class="value">"midia/happy-mistake.mp3"</span> <span class="attr">type=</span><span class="value">"audio/ogg"</span><span class="tag">&gt;</span>
+
+    <span class="tag">&lt;source</span> <span class="attr">src=</span><span class="value">"midia/happy-mistake.mp3"</span> <span class="attr">type=</span><span class="value">"audio/wav"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/audio&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section>
+<h4 class="titulo-secao">VÍDEO</h4>
+
+<div class="botoes">
+<button onclick="toggleSection('sec25')">Mostrar código</button>
+<button onclick="copyCode('code25')">Copiar</button>
+</div>
+
+<div id="sec25" style="display:none;">
+<div class="container">
+
+<div class="resultado">
+
+<p>Vídeo hospedado localmente:</p>
+
+<video controls width="560" poster="imagens/limoes-capa.png">
+    <source src="midia/meu-video.mp4" type="video/mp4">
+    <source src="midia/meu-video.m4v" type="video/mp4">
+    <source src="midia/meu-video.webm" type="video/webm">
+    <source src="midia/meu-video.ogv" type="video/ogg">
+    <p>Este navegador não tem compatibilidade com reprodução de vídeos</p>
+</video>
+
+<p>Vídeo do YouTube:</p>
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY"
+title="YouTube video"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+</div>
+
+<div class="codigo">
+<pre id="code25"><code>
+<span class="tag">&lt;video</span> <span class="attr">controls</span> <span class="attr">width=</span><span class="value">"560"</span> <span class="attr">poster=</span><span class="value">"imagens/limoes-capa.png"</span><span class="tag">&gt;</span>
+
+    <span class="tag">&lt;source</span> <span class="attr">src=</span><span class="value">"midia/meu-video.mp4"</span> <span class="attr">type=</span><span class="value">"video/mp4"</span><span class="tag">&gt;</span>
+
+    <span class="tag">&lt;source</span> <span class="attr">src=</span><span class="value">"midia/meu-video.m4v"</span> <span class="attr">type=</span><span class="value">"video/mp4"</span><span class="tag">&gt;</span>
+
+    <span class="tag">&lt;source</span> <span class="attr">src=</span><span class="value">"midia/meu-video.webm"</span> <span class="attr">type=</span><span class="value">"video/webm"</span><span class="tag">&gt;</span>
+
+    <span class="tag">&lt;source</span> <span class="attr">src=</span><span class="value">"midia/meu-video.ogv"</span> <span class="attr">type=</span><span class="value">"video/ogg"</span><span class="tag">&gt;</span>
+
+    <span class="tag">&lt;p&gt;</span><span class="text">Este navegador não tem compatibilidade com reprodução de vídeos</span><span class="tag">&lt;/p&gt;</span>
+
+<span class="tag">&lt;/video&gt;</span>
+
+<span class="tag">&lt;iframe</span> <span class="attr">width=</span><span class="value">"560"</span> <span class="attr">height=</span><span class="value">"315"</span>
+<span class="attr">src=</span><span class="value">"https://www.youtube.com/embed/tgbNymZ7vqY"</span>
+<span class="attr">title=</span><span class="value">"YouTube video"</span>
+<span class="attr">frameborder=</span><span class="value">"0"</span>
+<span class="attr">allowfullscreen</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/iframe&gt;</span>
+</code></pre>
+</div>
+
+</div>
+</div>
+</section>

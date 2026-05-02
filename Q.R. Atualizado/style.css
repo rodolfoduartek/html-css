@@ -1,0 +1,61 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+    counter-reset: secao;
+}
+
+/* TITULO */
+h4 {
+    background: rgb(239, 239, 234);
+    padding: 5px;
+}
+
+/* NUMERAÇÃO AUTOMÁTICA */
+.titulo-secao::before {
+    counter-increment: secao;
+    content: counter(secao) " ";
+    font-weight: bold;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.resultado {
+    width: 50%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.codigo {
+    width: 50%;
+}
+
+pre {
+    background: #111;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 400px;
+    overflow-x: auto;
+}
+
+/* CORES */
+.tag { color: #4CAF50; }
+.attr { color: #2196F3; }
+.value { color: #FFC107; }
+.text { color: #fff; }
+
+/* BOTÕES */
+.botoes {
+    margin-top: 10px;
+}
+
+button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
