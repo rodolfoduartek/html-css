@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+
+     --font-destaque:'passion one';
+     --font-padrão: Arial, verdana, Helvetica, sans-serif;
+     --font-cordel: 'sriracha static',
+
+}
+
+header{
+    background-color: black;
+    height: 150px;
+    max-width:500px ;
+    margin: -10px;
+    display: block;
+    align-items: center;
+    margin: auto;
+
+}
+header > h1{
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0% ;
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    
+
+}
+
+header > p{
+    color: white;
+    text-align: center;
+    margin-top: 3px;
+    font-family:var(--font-cordel)
+}
+header a{
+    color: white;
+
+
+}
+
+main {
+    
+    display: block;
+    max-width:498px ;
+    border: 1px solid black;
+    margin: auto;
+}
+
+aside{
+    width: 230px;
+}
