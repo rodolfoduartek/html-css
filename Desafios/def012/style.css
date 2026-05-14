@@ -70,12 +70,30 @@ section.normal{
 section.imagem{
     background-color: rgb(107, 101, 101);
     color: white;
-    background-image: ;
+    box-shadow: inset 7px 7px 10px 10px rgba(0, 0, 0, 0.666);
+    background-attachment: fixed;
+    
+    
 }
 section.imagem > p{
-    background-color: rgba(0, 0, 0, 0.151);
+    background-color: rgba(0, 0, 0, 0.375);
     display: inline-block;
     padding: 10px ;
+    text-shadow: 5px 5px 10px black;
+}
+section > p{
+    padding-bottom: 2em;
+}
+
+section#img01{
+    background-image: url(imagem/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+section#img02{
+    background-image: url(imagem/background002.jpg);
+    background-position: right center;
+    background-size: cover;
 }
 
 footer{
