@@ -2,57 +2,85 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passero+One&family=Sriracha&display=swap');
+
 
 :root{
 
-     --font-destaque:'passion one';
-     --font-padrão: Arial, verdana, Helvetica, sans-serif;
-     --font-cordel: 'sriracha static',
+     
+     --font-1: Arial, verdana, Helvetica, sans-serif;
+     --font-2:"Passero One", sans-serif;
+     --font-3:  "Sriracha", 'cursive';
 
 }
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 
 header{
     background-color: black;
-    height: 150px;
-    max-width:500px ;
-    margin: -10px;
-    display: block;
-    align-items: center;
-    margin: auto;
-
-}
-header > h1{
     color: white;
     text-align: center;
-    padding-top: 30px;
-    margin: 0% ;
-    font-family: var(--font-destaque);
-    font-size: 3em;
     
+}
 
+header > h1{
+    padding: 50px;
+    font-variant: small-caps;
+    font-family: var(--font-2);
+    font-size: 10vw;
 }
 
 header > p{
+    padding-bottom: 50px;
+}
+
+a{
     color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left:30px ;
+    font-family: var(--font-3);
+    font-size: 3vw;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(107, 101, 101);
+    color: white;
+    background-image: ;
+}
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.151);
+    display: inline-block;
+    padding: 10px ;
+}
+
+footer{
+    background-color: black;
     text-align: center;
-    margin-top: 3px;
-    font-family:var(--font-cordel)
-}
-header a{
     color: white;
-
-
-}
-
-main {
-    
-    display: block;
-    max-width:498px ;
-    border: 1px solid black;
-    margin: auto;
-}
-
-aside{
-    width: 230px;
+    padding: 10px;
 }
