@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.caixa1{
+    background-color: rgba(255, 0, 0, 0.559);
+    grid-row-start: 1;
+    grid-row-end: -3 ;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.caixa2{
+    background-color: rgba(0, 255, 255, 0.495);
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.caixa3{
+    background-color: rgba(0, 255, 85, 0.495);
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
